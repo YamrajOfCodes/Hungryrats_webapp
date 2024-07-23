@@ -1,0 +1,20 @@
+.sec{
+    height: auto;
+    .container{
+        .row{
+            .menu{
+                height: 5vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                letter-spacing: 14px;
+            }
+            .wrap{
+                display: flex;
+                gap: 44px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.work{
+    height: auto;
+    width: 100vw;
+
+    .container{
+        .row{
+            .explore{
+                p{
+                    font-size: 1.2rem;
+                
+                    a{
+                        width: 20px;
+                        &:active{
+                            color: blue;
+                         }   
+        
+                         &:hover{
+                           transition: 0.7s ease all;
+                           scale: 1.2;
+                         }
+                    }
+                }
+        
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+    .work{
+        height: auto;
+        .container{
+            .row{
+                .heading{
+                    h2{
+                        font-size: 2rem;
+                    }
+                    .subheading{
+                        width: 220px;
+                        h2{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .explore{
+                    margin-bottom: 24px;
+                    p{
+                        font-size: 1.4rem;
+                    
+                    }
+            
+                     &:active{
+                        color: blue;
+                     }   
+    
+                     &:hover{
+                       transition: 1s ease all;
+                       scale: 1.2;
+                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+   .work{
+    height: auto;
+   }
+}
+
+@media screen and (min-width:1400px) {
+    .work{
+        .container{
+            .row{
+                .heading{
+                    h2{
+                        font-size: 2.4rem;
+                    }
+                    .subheading{
+                        width: 250px;
+                        height: 50px;
+                        padding: 4px;
+                        h2{
+                            font-size: 2.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

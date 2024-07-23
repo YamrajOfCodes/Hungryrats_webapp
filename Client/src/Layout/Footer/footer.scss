@@ -1,0 +1,160 @@
+footer{
+    height: 20vh;
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 14px;
+    
+   > .col-12{
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+        background-color: #105DF0;
+        height: 26%;
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .utils{
+        padding-top: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        li{
+            font-size: 0.8rem;
+          display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 576px){
+    footer{
+        height: 20vh;
+        background-color: #363636;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+    
+        .utils{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+    
+            li{
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1000px){
+    footer{
+        height: 20vh;
+        background-color: #363636;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    
+        .utils{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+    
+            li{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    footer{
+        height: 20vh;
+        background-color: #363636;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+    
+        
+       > .col-12{
+             display: flex;
+             justify-content: center;
+             align-items: center; 
+            background-color: #105DF0;
+            height: 26%;
+    
+            p{
+                font-size: 2rem;
+            }
+        }
+    
+        .utils{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding-top: 14px;
+            li{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 1600px){
+    footer{
+        height: 30vh;
+        background-color: #363636;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 14px;
+    
+        
+       > .col-12{
+             display: flex;
+             justify-content: center;
+             align-items: center; 
+            background-color: #105DF0;
+            height: 20%;
+            
+    
+            p{
+                font-size: 2rem;
+            }
+        }
+    
+        .utils{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding-top: 34px;
+           
+    
+            li{
+                display: flex;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+
+

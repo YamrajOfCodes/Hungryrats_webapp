@@ -1,0 +1,212 @@
+.sections{
+    height: 80vh;
+    width: 100vw;
+  .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   .row{
+
+    .left-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 60%;
+        }
+    }
+    .right-part{
+        display: flex;
+       
+        .content{
+            display: flex;
+            gap: 4px;
+            flex-direction: column;
+            padding-inline:1rem;
+
+            .veg-img{
+                height: 3rem;
+                padding: 4px;
+                border-radius: 4px;
+                align-items: center;
+                width: 140px;
+                border-radius: 14px;
+                border: 0.5px solid #ccc;
+
+                img{
+                    height: 100%;
+                }
+            }
+
+            .order-ctas{
+                button{
+                    padding: 8px 7px;
+                    border: none;
+                    // background-color: aqua;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+   }
+    
+}
+ 
+}
+
+@media screen and (min-width:770px) {
+    .sections{
+        height: 80vh;
+        width: 100vw;
+      .container{
+        height: 100%;
+    
+       .row{
+    
+        .left-part{
+            img{
+                width: 90%;
+            }
+        }
+        .right-part{
+            display: flex;
+           
+            .content{
+                display: flex;
+                gap: 7px;
+                padding-inline:1rem;
+                .desc{
+                    font-size: 1.1rem;
+                }
+    
+                .veg-img{
+                    height: 3rem;
+                    padding: 4px;
+                    img{
+                        height: 100%;
+                    }
+                }
+    
+                .order-ctas{
+                    button{
+                        padding: 10px 9px;
+                    }
+                }
+            }
+        }
+       }
+        
+    }
+     
+    }
+}
+
+
+@media screen and (min-width:1000px) {
+    .sections{
+        height: 80vh;
+        width: 100vw;
+      .container{
+        height: 100%;
+    
+       .row{
+    
+        .left-part{
+            img{
+                width: 90%;
+            }
+        }
+        .right-part{
+            display: flex;
+           
+            .content{
+                display: flex;
+                gap: 7px;
+                padding-inline:1rem;
+                .desc{
+                    font-size: 1.2rem;
+                }
+                .stars{
+                    img{
+                        width: 22px;
+                    }
+                }
+
+                h4{
+                    font-size: 1.8rem;
+                }
+                .para{
+                    font-size: 1.1rem;
+                }
+    
+                .veg-img{
+                    height: 3rem;
+                    padding: 4px;
+                    img{
+                        height: 100%;
+                    }
+                }
+    
+                .order-ctas{
+                    button{
+                        padding: 10px 9px;
+                    }
+                }
+            }
+        }
+       }
+        
+    }
+     
+    }
+}
+
+@media screen and (min-width:1470px) {
+    .sections{
+        height: 80vh;
+        width: 100vw;
+      .container{
+        height: 100%;
+    
+       .row{
+    
+        .left-part{
+            img{
+                width: 70%;
+                margin-left: 24px;
+            }
+        }
+        .right-part{
+            display: flex;
+           
+            .content{
+                display: flex;
+                gap: 7px;
+                padding-inline:1rem;
+                .desc{
+                    font-size: 1.1rem;
+                }
+    
+                .veg-img{
+                    height: 3rem;
+                    padding: 4px;
+                    img{
+                        height: 100%;
+                    }
+                }
+    
+                .order-ctas{
+                    button{
+                        padding: 10px 17px;
+                    }
+                }
+            }
+        }
+       }
+        
+    }
+     
+    }
+}

@@ -1,0 +1,128 @@
+.box{
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    overflow: hidden;
+
+    .img{
+        height: 35%;
+        img{
+            height: 100%;
+        }
+    }
+    h3{
+        font-size: 1rem;
+        font-weight: 700;
+        color: #243E63;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:772px){
+    .box{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        overflow: hidden;
+    
+        .img{
+            height: 35%;
+            img{
+                height: 100%;
+            }
+        }
+        h3{
+            font-size: 1rem;
+            font-weight: 700;
+            color: #243E63;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 773px){
+    .box{
+        height: 220px;
+        width: 100%;
+        gap: 2px;
+        padding: 8px;
+       
+    
+        h3{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .box{
+        height: 250px;
+        width: 80%;
+        gap: 2px;
+        padding: 8px;
+       
+    
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .box{
+        height: 270px;
+        width: 70%;
+        gap: 2px;
+        padding: 8px;
+       
+    
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1800px){
+    .box{
+        height: 280px;
+        width: 55%;
+        gap: 2px;
+        padding: 14px;
+       
+    
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+
+}

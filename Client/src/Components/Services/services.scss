@@ -1,0 +1,141 @@
+.services {
+    height: auto;
+    width: 100vw;
+    margin-top: 2vh;
+
+    .row {
+
+        .heading {
+
+
+            h2{
+                color: #243E63;
+                font-weight: bolder;
+                font-size: 1.8rem;
+            }
+
+            .subheading {
+                padding-top: 4px;
+                background-color: #6415ff;
+                height: 30px;
+                width: 120px;
+                transform: skew(-20deg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-weight: bolder;
+                font-family: Orelega One, serif;
+
+                h2{
+                    font-size: 1.8rem;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px){
+   
+    .services {
+        height: auto;
+        width: 100vw;
+
+        .row {
+    
+            .heading {
+    
+                .subheading {
+                    padding-top: 4px;
+                    background-color: #6415ff;
+                    height: 34px;
+                    width: 130px;
+    
+                    h2{
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+   
+    .services {
+        height: auto;
+        width: 100vw;
+        margin-top: 5vh;
+    
+        .row {
+    
+            .heading {
+
+                h2{
+                    font-size: 2.4rem;
+                }
+    
+                .subheading {
+                    padding-top: 4px;
+                    background-color: #6415ff;
+                    height: 44px;
+                    width: 180px;
+                    transform: skew(-20deg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: bolder;
+                    font-family: Orelega One, serif;
+    
+                    h2{
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (min-width: 1400px){
+   
+    .services {
+        height: auto;
+        width: 100vw;
+        margin-top: 5vh;
+    
+        .row {
+    
+            .heading {
+
+                h2{
+                    font-size: 2.5rem;
+                }
+    
+                .subheading {
+                    padding-top: 4px;
+                    background-color: #6415ff;
+                    height: 50px;
+                    width: 170px;
+                    transform: skew(-20deg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: bolder;
+                    font-family: Orelega One, serif;
+    
+                    h2{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

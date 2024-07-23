@@ -1,0 +1,39 @@
+.wrapper{
+width: 100vw;
+margin-top: 0vh;
+margin-bottom: 5vh;
+display: flex;
+justify-content: center;
+display: flex;
+justify-content: center;
+back
+.logo{
+   img{
+    width: 20%;
+   }
+}
+form input{
+    background-color: #f7f7f7;;
+    border-color: #eeecec;
+    color: #5e6278;
+}
+input:focus{
+    box-shadow: none;
+}
+.btn-primary{
+    padding: 10px;
+    font-weight: 500;
+}
+}
+@media screen and (max-width:950px){
+    section{
+        
+        .login-container{
+            display: flex;
+            justify-content: center;
+           .col-sm-8{
+            width: 90%;
+           }
+        }
+    }
+}

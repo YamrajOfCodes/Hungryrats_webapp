@@ -1,0 +1,206 @@
+// nav{
+//     width: 100vw;
+//     background-color: #105DF0;
+//      h1{
+//          font-size: 1.2rem;
+//      }
+//      ul{
+//          display: flex;
+//          justify-content: center;
+//          align-items: center;
+ 
+//          li{
+//              font-size: 1.4rem;
+//          }
+//      }
+
+//      .navbar-toggler{
+
+//         i{
+//             font-size: 2rem;
+//         }
+
+//         &:focus{
+//             box-sizing: none;
+//         }
+//      }
+//  }
+ 
+ @media screen and (max-width: 576px) {
+    
+     nav{
+         width: 100vw;
+         background-color: #105DF0;
+         padding-inline:14px ;
+    
+         h1{
+             font-size:1.2rem;
+         }
+         ul{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+     
+             li{
+                 font-size: 1rem;
+                //  background-color: #131313;
+                 height: 40px;
+                 width: 110px;
+                 border-radius: 28px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 cursor: pointer;
+                 margin-top: 18px;
+             }
+         }
+         .navbar-toggler{
+            outline: none;
+
+                    i{
+                        font-size: 1rem;
+                    }
+            
+                    &:focus{
+                        box-shadow: none;
+                    }
+                 }
+     }
+ 
+   }
+ 
+ 
+ 
+ 
+   @media screen and (min-width: 576px) {
+    
+     nav{
+         width: 100vw;
+         background-color: #105DF0;
+    
+         h1{
+             font-size:1.4rem;
+         }
+         ul{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+     
+             li{
+                 font-size: 1rem;
+                //  background-color: #131313;
+                 height: 40px;
+                 width: 110px;
+                 border-radius: 28px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 cursor: pointer;
+                 margin-top: 18px;
+             }
+         }
+     }
+ 
+   }
+ 
+ 
+   @media screen and (min-width: 1000px) {
+    
+     nav{
+         height: 10vh;
+         width: 100vw;
+       
+ 
+ 
+         h1{
+             font-size:1.7rem;
+             font-weight: bolder;
+         }
+         ul{
+             display: flex;
+             justify-content: flex-end;
+             width: 100%;
+             align-items: center;
+     
+             li{
+                 font-size: 1.2rem;
+                //  background-color: #131313;
+                 height: 60px;
+                 width: 140px;
+                 border-radius: 28px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 cursor: pointer;
+                  margin-right: 2rem;
+                  margin-top: 0px;
+             }
+         }
+     }
+     }
+     @media screen and (min-width: 1200px) {
+    
+        nav{
+            ul{
+                li{
+                    font-size: 1rem;
+                    height: 44px;
+                    width: 130px;
+                }
+                .class{
+                    background-color: #131313;
+                    box-shadow: 1px 1px 2px 1px #cc1;
+                }
+            }
+        }
+        }
+
+
+     @media screen and (min-width: 1600px) {
+    
+        nav{
+            height: 10vh;
+            width: 100vw;
+   
+            h1{
+                font-size:2rem;
+            }
+            ul{
+                li{
+                    font-size: 1rem;
+                    height: 44px;
+                    width: 130px;
+                }
+                .class{
+                    background-color: #131313;
+                    box-shadow: 1px 1px 2px 1px #cc1;
+                }
+            }
+        }
+        }
+
+
+        @media screen and (min-width: 2200px) {
+    
+            nav{
+                height: 10vh;
+                width: 100vw;
+       
+                h1{
+                    font-size:2.7rem;
+                }
+                ul{
+                    li{
+                        font-size: 1.4rem;
+                        // background-color: #131313;
+                        height: 60px;
+                        width: 140px;
+                    }
+                }
+            }
+            }
+    
+ 
+
+     
+   
