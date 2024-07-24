@@ -2,7 +2,7 @@ import { lazy}  from "react"
 import Layout from "./Layout/Layout"
 import Home from "./Page/Home/Home"
 import {Routes,Route} from "react-router-dom"
-import CommonLayout from "../src/Layout/Layout"
+import CommonLayout from "../src/Components/Admincommonlayout/Adminsidebar"
 const Login = lazy(() => import("./Page/Login/Login"));
 const Food = lazy(() => import("./Page/Foodpage/Food"));
 const Fooditem = lazy(() => import("./Page/Fooditem/Fooditem"));
@@ -10,7 +10,7 @@ const Contact = lazy(() => import("./Page/Contact/Contact"));
 const Adminlogin = lazy(() => import("./Page/adminlogin/Adminlogin"));
 const Admindashboard = lazy(() => import("./Page/Admin/Admindashboard"));
 const Adminproducts = lazy(() => import("./Page/Admin/Adminproducts"));
-const Addproduct = lazy(() => import("./Page/Admin/Addproduct"));
+import Addproduct from "./Page/Admin/Addproduct"
 const Adminuser = lazy(() => import("./Page/Admin/Adminuser"));
 const Adminprotected = lazy(() => import("./Components/ProtectedRoutes/Adminprotected"));
 const Userprotected = lazy(() => import("./Components/ProtectedRoutes/Userprotected"));

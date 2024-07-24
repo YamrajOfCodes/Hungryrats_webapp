@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../Redux/Slice/adminSlice/adminslice';
 
+
 const Addproduct = () => {
 
   const [input,setinput] = useState({
