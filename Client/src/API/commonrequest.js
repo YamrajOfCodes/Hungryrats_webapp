@@ -3,7 +3,7 @@ import axios from "axios";
 export const commonrequest = async(methods,url,body,header,auth)=>{
     const adminToken = localStorage.getItem("adminToken");
     const userToken = localStorage.getItem("userToken");
-//    console.log(userToken);
+   
     const config ={
         method:methods,
         url,
@@ -16,7 +16,7 @@ export const commonrequest = async(methods,url,body,header,auth)=>{
 
     if(auth == "admin"){
         config.headers.Authorization = adminToken
-    }else{
+    }else if(auth == "user"){
         config.headers.Authorization = userToken
     }
 

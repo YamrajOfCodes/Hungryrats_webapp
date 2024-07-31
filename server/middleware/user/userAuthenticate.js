@@ -6,7 +6,6 @@ const jwt = require("jsonwebtoken");
 const userauthenticate = async(req,res,next)=>{
 
   
-  // console.log(token);
   
   try {
     const token = req.headers.authorization;
@@ -24,7 +23,7 @@ const userauthenticate = async(req,res,next)=>{
       next()
 
   } catch (error) {
-    console.log(error);
+    console.log({error:"No token provided"});
   }
 
 }

@@ -3,7 +3,7 @@ import {BASE_URL} from "../helper"
 
 
  export const userloginAPI = async(data,header)=>{
-    return await commonrequest("POST",`${BASE_URL}/user/api/login`,data,header,"admin")
+    return await commonrequest("POST",`${BASE_URL}/user/api/login`,data,header,"user")
 }
 
 export const userloggedinAPI = async(header)=>{
@@ -11,7 +11,7 @@ export const userloggedinAPI = async(header)=>{
 }
 
 export const userlogoutAPI = async(header)=>{
-    return await commonrequest("POST",`${BASE_URL}/user/api/logout`,header,"user")
+    return await commonrequest("POST",`${BASE_URL}/user/api/logout`,{},header,"user")
 }
 
  export const messageAPI = async(data,header)=>{

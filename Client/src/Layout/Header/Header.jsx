@@ -7,10 +7,8 @@ import { userLogout, userVerify } from '../../Redux/Slice/userSlice/userSlice';
 const Header = () => {
 
   const {userlogin} = useSelector((state)=>state.User);
-  const {userlogout} = useSelector((state)=>state.User);
-  const {userloggedin} = useSelector((state)=>state.User);
-  // console.log("userlogou",userlogout);
-  console.log("userlogou",userlogin);
+
+
 
 
   const dispatch = useDispatch();
