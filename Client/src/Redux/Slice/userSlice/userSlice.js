@@ -190,6 +190,7 @@ export const userSlice = createSlice({
             state.loader = false;
             state.userloggedin = [];
             state.userlogout = [action.payload];
+            state.userlogin=[];
         })
         .addCase(userLogout.rejected,(state,action)=>{
             state.loader = false;

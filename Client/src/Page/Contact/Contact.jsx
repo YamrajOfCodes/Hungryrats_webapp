@@ -24,7 +24,7 @@ const Contact = () => {
   const [input,setinput] = useState({
     email:"",
     name:"",
-    message:""
+    message: state ? state : ""
   })
 
   const dispatch =  useDispatch();
@@ -84,7 +84,7 @@ const Contact = () => {
 <label for="floatingPassword">name</label>
 </div>
 <div class="form-floating">
-<textarea class="form-control mt-4"  placeholder="Leave a comment here"  onChange={handlechange} value={state ? state : input.message} id="floatingTextarea2" name='message' style={{height:'150px',paddingTop:"34px"}}></textarea>
+<textarea class="form-control mt-4"  placeholder="Leave a message here"  onChange={handlechange} value={state? state : input.message} id="floatingTextarea2" name='message' style={{height:'150px',paddingTop:"34px"}}></textarea>
 <label for="floatingTextarea2">Comments</label>
 
 </div>

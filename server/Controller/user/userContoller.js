@@ -105,7 +105,7 @@ const logout = async(req,res)=>{
     try {
         
         req.rootUser.tokens = req.rootUser.tokens.filter((element)=>{
-            return req.rootUser.tokens !== req.token
+            return element.token !== req.token
         })
 
         await req.rootUser.save();

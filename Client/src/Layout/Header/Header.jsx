@@ -9,7 +9,8 @@ const Header = () => {
   const {userlogin} = useSelector((state)=>state.User);
   const {userlogout} = useSelector((state)=>state.User);
   const {userloggedin} = useSelector((state)=>state.User);
-  // console.log("userlogou",userloggedin);
+  // console.log("userlogou",userlogout);
+  console.log("userlogou",userlogin);
 
 
   const dispatch = useDispatch();
@@ -27,13 +28,10 @@ const Header = () => {
      })
   }
 
-  const userLoggedin = ()=>{
-    dispatch(userVerify());
-
-  }
+ 
 
   useEffect(()=>{
-    userLoggedin()
+  
     
   },[userlogin])
 
@@ -59,11 +57,12 @@ const Header = () => {
           </li> 
           <li class="nav-item ">
            {
-             userloggedin?.length > 0 ?
+             userlogin?.length > 0 ?
             <NavLink  onClick={(e)=>{setnavbar("logout"),handleLogout()}} class={navbar == "logout" ? "nav-item class" : "nav-item"}  style={{color:"#fff"}}   >Logout</NavLink>
             :
             <NavLink   onClick={(e)=>{setnavbar("")}} class={navbar == "login" ? "nav-item class" : "nav-item"} style={{color:"#fff"}}  to={"/login"}>Login</NavLink>
            }
+           
           </li>  
         </ul>
       

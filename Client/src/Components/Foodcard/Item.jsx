@@ -6,19 +6,15 @@ import toast from 'react-hot-toast';
 import { userVerify } from '../../Redux/Slice/userSlice/userSlice';
 const Item = ({price,productname,productimage,messname,id}) => {
 
-  const {userloggedin} = useSelector((state)=>state.User);
-  // console.log(userloggedin);
+ 
   const {userlogin} = useSelector((state)=>state.User);
 
-  const dispatch = useDispatch();
+ 
 
   const handleorder = ()=>{
     toast.error("you have to login before furthur processing")
   }
 
-  useEffect(()=>{
-    dispatch(userVerify());
-  },[])
 
 
 

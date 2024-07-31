@@ -5,11 +5,11 @@ const jwt = require("jsonwebtoken");
 
 const userauthenticate = async(req,res,next)=>{
 
-  const token = req.headers.authorization;
-
+  
   // console.log(token);
-
+  
   try {
+    const token = req.headers.authorization;
     
     const validuser = jwt.verify(token,USER_SECRET);
 
