@@ -1,4 +1,4 @@
-const { userverify } = require("../../Controller/user/userContoller");
+
 const userDb = require("../../Model/user/userModel");
 const USER_SECRET="sdasd"
 const jwt = require("jsonwebtoken");
@@ -10,22 +10,29 @@ const userauthenticate = async(req,res,next)=>{
   try {
     const token = req.headers.authorization;
     
-    const validuser = jwt.verify(token,USER_SECRET);
+    const verifyToken = jwt.verify(token,USER_SECRET);
+    
+    const rootUser = await userDb.findOne({_id:verifyToken._id});
+   
+  
 
-    const rootUser = await userDb.findOne({_id:validuser._id})
+    
+    if(!rootUser){
+      throw new Error("user not found")
+    }else{
 
-      if(!rootUser){throw new Error("user not found")}
-
+      
       req.token = token
       req.rootUser = rootUser
       req.userId = rootUser._id
+      req.userMainId = rootUser.id
+      
+      next();
+    }
 
-      next()
-
-  } catch (error) {
-    console.log({error:"No token provided"});
-  }
-
+} catch (error) {
+    res.status(400).json({error:"Unauthorized No token Provide"})
+}
 }
 
 module.exports = userauthenticate

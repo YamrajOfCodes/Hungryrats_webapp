@@ -54,7 +54,7 @@ const Fooditem = () => {
         dispatch(userVerify());
        callAPI();
 
-    },[userloggedin])
+    },[])
 
     return (
         <>

@@ -84,8 +84,11 @@ const Login = async(req,res)=>{
 const userverify = async(req,res)=>{
 
     try {
+
+        console.log("hii");
         
         const validuser = await userDb.findOne({_id:req.userId});
+        console.log(validuser);
 
         if(validuser){
             res.status(200).json(validuser)

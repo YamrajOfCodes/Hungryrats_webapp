@@ -7,7 +7,7 @@ import {BASE_URL} from "../helper"
 }
 
 export const userloggedinAPI = async(header)=>{
-    return await commonrequest("GET",`${BASE_URL}/user/api/userverify`,header,"user")
+    return await commonrequest("GET",`${BASE_URL}/user/api/userverify`,"",header,"user")
 }
 
 export const userlogoutAPI = async(header)=>{

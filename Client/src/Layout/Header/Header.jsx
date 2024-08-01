@@ -1,12 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import "./header.scss"
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { userLogout, userVerify } from '../../Redux/Slice/userSlice/userSlice';
 
+
 const Header = () => {
 
   const {userlogin} = useSelector((state)=>state.User);
+  const {userloggedin} = useSelector((state)=>state.User)
+
+  console.log(userloggedin);
+  
+
+
+
+
+
 
 
 
@@ -26,12 +36,12 @@ const Header = () => {
      })
   }
 
+  useEffect(()=>{
+   dispatch(userVerify())
+  },[])
+
  
 
-  useEffect(()=>{
-  
-    
-  },[userlogin])
 
 
 
@@ -55,8 +65,8 @@ const Header = () => {
           </li> 
           <li class="nav-item ">
            {
-             userlogin?.length > 0 ?
-            <NavLink  onClick={(e)=>{setnavbar("logout"),handleLogout()}} class={navbar == "logout" ? "nav-item class" : "nav-item"}  style={{color:"#fff"}}   >Logout</NavLink>
+             userloggedin?.length > 0 ?
+            <NavLink  onClick={handleLogout} class={navbar == "logout" ? "nav-item class" : "nav-item"}  style={{color:"#fff"}}   >Logout</NavLink>
             :
             <NavLink   onClick={(e)=>{setnavbar("")}} class={navbar == "login" ? "nav-item class" : "nav-item"} style={{color:"#fff"}}  to={"/login"}>Login</NavLink>
            }
