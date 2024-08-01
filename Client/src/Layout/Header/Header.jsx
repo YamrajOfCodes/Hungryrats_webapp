@@ -10,7 +10,6 @@ const Header = () => {
   const {userlogin} = useSelector((state)=>state.User);
   const {userloggedin} = useSelector((state)=>state.User)
 
-  console.log(userloggedin);
   
 
 
