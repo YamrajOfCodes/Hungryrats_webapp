@@ -91,7 +91,7 @@ const userverify = async(req,res)=>{
        
 
         if(validuser){
-            res.status(200).json(validuser)
+            res.status(200).json([validuser,validuser])
         }else{
             res.status(400).json({error:"invalid admin"})
         }

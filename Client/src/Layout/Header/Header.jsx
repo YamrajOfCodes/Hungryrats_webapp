@@ -7,13 +7,13 @@ import { userLogout, userVerify } from '../../Redux/Slice/userSlice/userSlice';
 
 const Header = () => {
 
-  const {userlogin} = useSelector((state)=>state.User);
+ 
   const {userloggedin} = useSelector((state)=>state.User)
 
   
 
 
-
+console.log(userloggedin);
 
 
 
@@ -64,7 +64,7 @@ const Header = () => {
           </li> 
           <li class="nav-item ">
            {
-             userloggedin?.length > 0 ?
+             userloggedin[0]?.length > 1 ?
             <NavLink  onClick={handleLogout} class={navbar == "logout" ? "nav-item class" : "nav-item"}  style={{color:"#fff"}}   >Logout</NavLink>
             :
             <NavLink   onClick={(e)=>{setnavbar("")}} class={navbar == "login" ? "nav-item class" : "nav-item"} style={{color:"#fff"}}  to={"/login"}>Login</NavLink>

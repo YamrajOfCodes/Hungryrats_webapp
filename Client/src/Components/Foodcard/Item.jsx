@@ -6,14 +6,19 @@ import toast from 'react-hot-toast';
 import { userVerify } from '../../Redux/Slice/userSlice/userSlice';
 const Item = ({price,productname,productimage,messname,id}) => {
 
+  const dispatch = useDispatch();
  
-  const {userlogin} = useSelector((state)=>state.User);
+  const {userloggedin} = useSelector((state)=>state.User);
 
  
 
   const handleorder = ()=>{
     toast.error("you have to login before furthur processing")
   }
+
+  useEffect(()=>{
+  dispatch(userVerify())
+  },[])
 
 
 
@@ -29,7 +34,7 @@ const Item = ({price,productname,productimage,messname,id}) => {
            </div>
         <p className='subtitle'>{messname}</p>
        {
-        userlogin?.length > 0?   <NavLink to={`/fooditem/${id}`}><p className='ctaa  btn btn-primary text-center mx-auto'>Order</p></NavLink>
+        userloggedin?.length > 0?   <NavLink to={`/fooditem/${id}`}><p className='ctaa  btn btn-primary text-center mx-auto'>Order</p></NavLink>
         :
         <p onClick={handleorder} className='ctaa  btn btn-primary text-center mx-auto'>Order</p>
        }
