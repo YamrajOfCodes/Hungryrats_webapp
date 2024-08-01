@@ -13,9 +13,6 @@ const Header = () => {
   
 
 
-console.log(userloggedin);
-
-
 
 
 
@@ -48,10 +45,10 @@ console.log(userloggedin);
     <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <NavLink  class="navbar-brand" to={"/"} ><h1 className='text-white'>Hungryrats</h1></NavLink>
-      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler px-5"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars text-white"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav ">
           <li  onClick={(e)=>{setnavbar("home")}} class={navbar == "home" ? "nav-item class" : "nav-item"}>
             <NavLink class="nav-link text-white active" to={"/"} style={{color:"#fff"}} aria-current="page" >Home</NavLink>

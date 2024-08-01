@@ -13,6 +13,7 @@ const Fooditem = () => {
     const dispatch = useDispatch();
     const {getsingleproduct} = useSelector((state)=>state.Admin);
     const {userloggedin} = useSelector((state)=>state.User)
+
    
 
     const {productId} = useParams();
@@ -38,8 +39,8 @@ const Fooditem = () => {
         
         
         const data={
-            Firstname:userloggedin[0]?.Firstname,
-            mobile:userloggedin[0]?.mobile,
+            Firstname:userloggedin[0][0]?.Firstname,
+            mobile:userloggedin[0][0]?.mobile,
             productname:getsingleproduct[0]?.productname,
             messname:getsingleproduct[0]?.messname,
             price:getsingleproduct[0]?.price
