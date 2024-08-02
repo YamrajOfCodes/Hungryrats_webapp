@@ -21,6 +21,7 @@ import { Toaster } from "react-hot-toast"
 import Loader from "./Components/Loader/Loader"
 import { Suspense, useEffect, useState } from "react"
 import ScrollTop from "./Components/Scrolltop/ScrollTop"
+import Error from "../src/Page/Error/Error"
 
 function App() {
 
@@ -59,6 +60,7 @@ function App() {
     <Route path="/fooditem" element={<Layout><Food/></Layout>}/>
     <Route path="/fooditem/:productId" element={<Layout><Userprotected Component={Fooditem}/></Layout>}/>
     <Route path="/contact" element={<Layout><Contact/></Layout>}/>
+    <Route path="*" element={<Layout><Error/></Layout>}/>
  </Routes>
       </Suspense>
  <Toaster/>
