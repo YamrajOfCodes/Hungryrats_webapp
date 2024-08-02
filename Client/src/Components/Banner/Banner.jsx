@@ -1,6 +1,7 @@
 import React from 'react'
 import "./banner.scss"
 import banner from "./banner.jpg";
+import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const Banner = () => {
      <div className="card shadow">
       <h2>Great Food Deserves Great Delivery</h2>
       <p>Every food lover deserves fast and Reliable delivery</p>
-      <button><a>Start Now</a></button>
+      <button><Link to={"/fooditem"}>Start Now</Link></button>
      </div>
     </div>
     
